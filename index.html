@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <header class="header container" id="header">
+            <nav class="nav" id="nav">
+                <h2>Fake Store Products</h2>
+                <button id="daynight">Dark Mode</button>
+            </nav>
+            <div class="header-content">
+               
+                <input type="search" id="search" placeholder="Search for a product…">
+                
+            
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="men's clothing">Men's Clothing</option>
+                    <option value="women's clothing">Women's Clothing</option>
+                </select>
+
+            
+                <select id="priceSort">
+                    <option value="">Sort by Price</option>
+                    <option value="asc">Price Low to High</option>
+                    <option value="desc">Price High to Low</option>
+                </select>
+            </div>
+        </header>
+        
+        <main id="productContainer" class="product-container">
+         
+        </main>
+
+        <aside id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems">
+        
+            </ul>
+            <p id="totalPrice">Total: $0.00</p>
+        </aside>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
